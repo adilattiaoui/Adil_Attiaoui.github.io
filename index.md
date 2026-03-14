@@ -963,8 +963,7 @@
       <div class="timeline-dot"></div>
       <div class="tl-date">10/2023 — Present</div>
       <div class="tl-degree">PhD in Vehicular Collective Perception Misbehavior Detection &amp; Mitigation</div>
-      <div class="tl-school">ENSIAS, Mohammed V University · Rabat, Morocco</div>
-      <div class="tl-school" style="margin-top:0.2rem;">in co-tutelle with INSA–UPHF · France</div>
+      <div class="tl-school">National School of Computer Science and Systems Analysis (ENSIAS) · Rabat, Morocco</div>
     </div>
     <div class="timeline-item">
       <div class="timeline-dot"></div>

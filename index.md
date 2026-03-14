@@ -376,22 +376,7 @@
       color: var(--text);
     }
 
-    /* ─── EDUCATION ─── */
-    #education .timeline {
-      position: relative;
-      padding-left: 2rem;
-    }
 
-    #education .timeline::before {
-      content: '';
-      position: absolute;
-      left: 0; top: 0.5rem; bottom: 0;
-      width: 1px;
-      background: linear-gradient(to bottom, var(--accent), transparent);
-    }
-
-    .timeline-item {
-      position: relative;
       margin-bottom: 3rem;
       padding-left: 2.5rem;
       opacity: 0;

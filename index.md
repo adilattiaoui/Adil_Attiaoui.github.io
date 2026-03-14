@@ -739,6 +739,81 @@
       .scroll-indicator { left: 1.5rem; }
     }
 
+    /* ─── PROFILE PHOTO ─── */
+    .hero-photo-wrap {
+      position: absolute;
+      top: 50%;
+      right: 6rem;
+      transform: translateY(-50%);
+      z-index: 2;
+      opacity: 0;
+      animation: fade-up 0.8s 0.6s forwards;
+    }
+
+    .hero-photo-frame {
+      width: 220px;
+      height: 220px;
+      border-radius: 50%;
+      border: 3px solid var(--accent);
+      padding: 4px;
+      background: var(--bg);
+      box-shadow: 0 0 0 1px rgba(26,86,219,0.15), 0 12px 40px rgba(26,86,219,0.12);
+      position: relative;
+    }
+
+    .hero-photo-frame::after {
+      content: '';
+      position: absolute;
+      inset: -8px;
+      border-radius: 50%;
+      border: 1px dashed rgba(26,86,219,0.2);
+      animation: spin-ring 18s linear infinite;
+    }
+
+    @keyframes spin-ring {
+      from { transform: rotate(0deg); }
+      to   { transform: rotate(360deg); }
+    }
+
+    .hero-photo-frame img {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      object-fit: cover;
+      display: block;
+    }
+
+    /* Initials fallback shown when no image src */
+    .hero-photo-initials {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--surface) 0%, var(--surface2) 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: var(--serif);
+      font-size: 3rem;
+      font-style: italic;
+      color: var(--accent);
+      letter-spacing: -0.02em;
+      user-select: none;
+    }
+
+    .hero-photo-caption {
+      text-align: center;
+      margin-top: 1rem;
+      font-family: var(--mono);
+      font-size: 0.65rem;
+      color: var(--muted);
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    @media (max-width: 1100px) {
+      .hero-photo-wrap { display: none; }
+    }
+
     /* ─── LANG BARS ─── */
     .lang-item { margin-bottom: 1.2rem; }
     .lang-name { display: flex; justify-content: space-between; font-size: 0.85rem; margin-bottom: 0.4rem; color: var(--text); }
@@ -773,12 +848,23 @@
 <section id="hero" style="max-width:100%; padding-left:6rem; padding-right:6rem;">
   <div class="hero-glow"></div>
   <div class="hero-glow2"></div>
+  <!-- PROFILE PHOTO — replace "your-photo.jpg" with your actual image filename -->
+  <div class="hero-photo-wrap">
+    <div class="hero-photo-frame">
+      <img src="your-photo.jpg" alt="Adil Attiaoui"
+           onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+      <div class="hero-photo-initials" style="display:none">A.A</div>
+    </div>
+    <div class="hero-photo-caption">Adil Attiaoui · PhD</div>
+  </div>
+
   <div class="hero-content">
-    <div class="hero-tag">PhD Researcher · ENSIAS · Rabat, Morocco</div>
+    <div class="hero-tag">PhD Researcher · ENSIAS &amp; INSA–UPHF · Co-tutelle</div>
     <h1 class="hero-name">Adil<br><em>Attiaoui</em></h1>
     <p class="hero-subtitle">
       Researching <strong>Vehicular Collective Perception Misbehavior Detection &amp; Mitigation</strong>
-      at Mohammed V University. Exploring the intersection of cybersecurity, federated learning,
+      in a co-tutelle PhD between <strong>ENSIAS, Mohammed V University</strong> (Morocco) and
+      <strong>INSA–UPHF</strong> (France). Exploring the intersection of cybersecurity, federated learning,
       and intelligent transportation systems.
     </p>
     <div class="hero-badges">
@@ -812,9 +898,10 @@
   <div class="about-grid">
     <div class="about-text">
       <p>
-        I am a <strong>PhD student</strong> at the National School of Computer Science and Systems Analysis
-        (ENSIAS), Mohammed V University in Rabat, Morocco, specializing in vehicular network security
-        and misbehavior detection.
+        I am a <strong>PhD student</strong> in a co-tutelle program between the National School of Computer
+        Science and Systems Analysis (<strong>ENSIAS</strong>), Mohammed V University in Rabat, Morocco,
+        and the <strong>Institut National des Sciences Appliquées de Hauts-de-France (INSA–UPHF)</strong>
+        in France — specializing in vehicular network security and misbehavior detection.
       </p>
       <p>
         My research focuses on designing robust detection and mitigation mechanisms for <strong>misbehaving nodes
@@ -834,7 +921,7 @@
     <div class="info-grid">
       <div class="info-item">
         <span class="info-label">Email</span>
-        <span class="info-val">adil7attiaoui@gmail.com</span>
+        <span class="info-val"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="6607020f0a510712120f0709130f26010b070f0a4805090b">[email&#160;protected]</a></span>
       </div>
       <div class="info-item">
         <span class="info-label">Phone</span>
@@ -846,7 +933,7 @@
       </div>
       <div class="info-item">
         <span class="info-label">Status</span>
-        <span class="info-val">PhD Candidate (2023 – Present)</span>
+        <span class="info-val">PhD Candidate (2023 – Present)<br><span style="font-size:0.82rem;color:var(--muted)">ENSIAS × INSA–UPHF · Co-tutelle</span></span>
       </div>
       <div class="info-item">
         <span class="info-label">Languages</span>
@@ -883,7 +970,8 @@
       <div class="timeline-dot"></div>
       <div class="tl-date">10/2023 — Present</div>
       <div class="tl-degree">PhD in Vehicular Collective Perception Misbehavior Detection &amp; Mitigation</div>
-      <div class="tl-school">National School of Computer Science and Systems Analysis (ENSIAS) · Rabat, Morocco</div>
+      <div class="tl-school">ENSIAS, Mohammed V University · Rabat, Morocco</div>
+      <div class="tl-school" style="margin-top:0.2rem;">in co-tutelle with INSA–UPHF · France</div>
     </div>
     <div class="timeline-item">
       <div class="timeline-dot"></div>
@@ -1097,7 +1185,7 @@
     <h2 class="contact-title">Let's <em style="font-family:var(--serif); font-style:italic; color:var(--accent)">Connect</em></h2>
     <p class="contact-sub">Interested in collaboration, research discussions, or academic opportunities? Reach out.</p>
     <div class="contact-links">
-      <a class="contact-link" href="mailto:adil7attiaoui@gmail.com">✉ adil7attiaoui@gmail.com</a>
+      <a class="contact-link" href="/cdn-cgi/l/email-protection#88e9ece1e4bfe9fcfce1e9e7fde1c8efe5e9e1e4a6ebe7e5">✉ <span class="__cf_email__" data-cfemail="a2c3c6cbce95c3d6d6cbc3cdd7cbe2c5cfc3cbce8cc1cdcf">[email&#160;protected]</span></a>
       <a class="contact-link" href="https://www.linkedin.com/in/" target="_blank">in LinkedIn</a>
       <a class="contact-link" href="tel:+212636793114">☎ +212 636 793 114</a>
     </div>
@@ -1108,7 +1196,7 @@
   <span style="color:var(--accent)">©</span> 2025 Adil Attiaoui · PhD Researcher · ENSIAS, Mohammed V University
 </footer>
 
-<script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(el => {
       if (el.isIntersecting) {
@@ -1124,20 +1212,4 @@
     const io = new IntersectionObserver((entries) => {
       entries.forEach(e => {
         if (e.isIntersecting) {
-          e.target.querySelectorAll('.lang-bar-fill').forEach(bar => bar.classList.add('animate'));
-        }
-      });
-    }, { threshold: 0.3 });
-    io.observe(el);
-  });
-
-  document.querySelectorAll('.pub-card').forEach((card, i) => {
-    card.style.transitionDelay = `${i * 0.08}s`;
-  });
-
-  document.querySelectorAll('.timeline-item').forEach((item, i) => {
-    item.style.transitionDelay = `${i * 0.1}s`;
-  });
-</script>
-</body>
-</html>
+          e.target.querySelectorAll('.lang-bar-fill').forEach(bar =

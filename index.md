@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -9,16 +10,16 @@
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
     :root {
-      --bg: #18181A;
-      --bg2: #0f1520;
-      --surface: #141c28;
-      --surface2: #1a2436;
-      --border: rgba(100,160,255,0.12);
-      --accent: #4a9eff;
-      --accent2: #00e5b4;
-      --accent3: #ff6b6b;
-      --text: #e8eef8;
-      --muted: #6b7f9e;
+      --bg: #ffffff;
+      --bg2: #f5f7fa;
+      --surface: #f0f4f8;
+      --surface2: #e8edf3;
+      --border: rgba(26, 86, 219, 0.15);
+      --accent: #1a56db;
+      --accent2: #0891b2;
+      --accent3: #dc2626;
+      --text: #0f172a;
+      --muted: #64748b;
       --serif: 'DM Serif Display', Georgia, serif;
       --mono: 'DM Mono', monospace;
       --sans: 'Outfit', sans-serif;
@@ -35,26 +36,14 @@
       overflow-x: hidden;
     }
 
-    /* ─── NOISE OVERLAY ─── */
-    body::before {
-      content: '';
-      position: fixed;
-      inset: 0;
-      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
-      pointer-events: none;
-      z-index: 1000;
-      opacity: 0.4;
-    }
-
-    /* ─── GRID BACKGROUND ─── */
+    /* ─── SUBTLE DOT BACKGROUND ─── */
     body::after {
       content: '';
       position: fixed;
       inset: 0;
       background-image:
-        linear-gradient(rgba(74,158,255,0.03) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(74,158,255,0.03) 1px, transparent 1px);
-      background-size: 60px 60px;
+        radial-gradient(circle, rgba(26,86,219,0.06) 1px, transparent 1px);
+      background-size: 28px 28px;
       pointer-events: none;
       z-index: 0;
     }
@@ -68,9 +57,10 @@
       align-items: center;
       justify-content: space-between;
       padding: 1.2rem 3rem;
-      background: rgba(10,14,20,0.85);
+      background: rgba(255,255,255,0.9);
       backdrop-filter: blur(16px);
       border-bottom: 1px solid var(--border);
+      box-shadow: 0 1px 12px rgba(26,86,219,0.06);
     }
 
     .nav-logo {
@@ -112,7 +102,7 @@
       position: absolute;
       width: 700px; height: 700px;
       border-radius: 50%;
-      background: radial-gradient(circle, rgba(74,158,255,0.08) 0%, transparent 70%);
+      background: radial-gradient(circle, rgba(26,86,219,0.07) 0%, transparent 70%);
       top: -100px; right: -200px;
       pointer-events: none;
       animation: pulse-glow 6s ease-in-out infinite;
@@ -122,7 +112,7 @@
       position: absolute;
       width: 400px; height: 400px;
       border-radius: 50%;
-      background: radial-gradient(circle, rgba(0,229,180,0.06) 0%, transparent 70%);
+      background: radial-gradient(circle, rgba(8,145,178,0.05) 0%, transparent 70%);
       bottom: 0; left: 20%;
       pointer-events: none;
       animation: pulse-glow 8s ease-in-out infinite reverse;
@@ -166,6 +156,7 @@
       line-height: 1.05;
       letter-spacing: -0.02em;
       margin-bottom: 1.5rem;
+      color: var(--text);
       opacity: 0;
       animation: fade-up 0.8s 0.4s forwards;
     }
@@ -185,6 +176,8 @@
       animation: fade-up 0.8s 0.6s forwards;
     }
 
+    .hero-subtitle strong { color: var(--text); font-weight: 500; }
+
     .hero-badges {
       display: flex;
       flex-wrap: wrap;
@@ -198,17 +191,18 @@
       font-family: var(--mono);
       font-size: 0.72rem;
       padding: 0.4rem 1rem;
-      border: 1px solid var(--border);
+      border: 1px solid rgba(26,86,219,0.25);
       border-radius: 2px;
       color: var(--muted);
       letter-spacing: 0.08em;
       transition: all 0.2s;
+      background: var(--bg);
     }
 
     .badge:hover {
       border-color: var(--accent);
       color: var(--accent);
-      background: rgba(74,158,255,0.06);
+      background: rgba(26,86,219,0.05);
     }
 
     .hero-ctas {
@@ -226,7 +220,7 @@
       text-transform: uppercase;
       padding: 0.9rem 2rem;
       background: var(--accent);
-      color: var(--bg);
+      color: #fff;
       border: none;
       cursor: pointer;
       text-decoration: none;
@@ -235,7 +229,7 @@
     }
 
     .btn-primary:hover {
-      background: #6ab4ff;
+      background: #1340b0;
       transform: translateY(-2px);
     }
 
@@ -245,7 +239,7 @@
       letter-spacing: 0.12em;
       text-transform: uppercase;
       padding: 0.9rem 2rem;
-      border: 1px solid var(--border);
+      border: 1px solid rgba(26,86,219,0.3);
       color: var(--muted);
       cursor: pointer;
       text-decoration: none;
@@ -255,6 +249,7 @@
     .btn-outline:hover {
       border-color: var(--accent);
       color: var(--accent);
+      background: rgba(26,86,219,0.04);
     }
 
     /* ─── SCROLL INDICATOR ─── */
@@ -275,7 +270,7 @@
 
     .scroll-line {
       width: 40px; height: 1px;
-      background: var(--muted);
+      background: #cbd5e1;
       position: relative;
       overflow: hidden;
     }
@@ -315,19 +310,20 @@
       font-family: var(--mono);
       font-size: 0.75rem;
       color: var(--accent);
-      opacity: 0.6;
+      opacity: 0.5;
     }
 
     .section-title {
       font-family: var(--serif);
       font-size: clamp(2rem, 4vw, 3rem);
       letter-spacing: -0.02em;
+      color: var(--text);
     }
 
     .section-line {
       flex: 1;
       height: 1px;
-      background: var(--border);
+      background: rgba(26,86,219,0.15);
       margin-left: 1rem;
     }
 
@@ -361,7 +357,7 @@
       gap: 1rem;
       align-items: flex-start;
       padding: 1rem 1.2rem;
-      border: 1px solid var(--border);
+      border: 1px solid rgba(26,86,219,0.15);
       border-left: 3px solid var(--accent);
       background: var(--surface);
     }
@@ -431,6 +427,7 @@
       font-family: var(--serif);
       font-size: 1.15rem;
       margin-bottom: 0.3rem;
+      color: var(--text);
     }
 
     .tl-school {
@@ -446,7 +443,7 @@
 
     .pub-card {
       padding: 1.8rem 2rem;
-      border: 1px solid var(--border);
+      border: 1px solid rgba(26,86,219,0.15);
       background: var(--surface);
       position: relative;
       overflow: hidden;
@@ -469,9 +466,10 @@
     }
 
     .pub-card:hover {
-      border-color: rgba(74,158,255,0.3);
+      border-color: rgba(26,86,219,0.35);
       background: var(--surface2);
       transform: translateX(4px);
+      box-shadow: 0 4px 20px rgba(26,86,219,0.08);
     }
 
     .pub-venue {
@@ -498,6 +496,7 @@
       font-weight: 500;
       margin-bottom: 0.6rem;
       line-height: 1.5;
+      color: var(--text);
     }
 
     .pub-authors {
@@ -519,13 +518,14 @@
 
     .skill-group {
       padding: 1.8rem;
-      border: 1px solid var(--border);
+      border: 1px solid rgba(26,86,219,0.15);
       background: var(--surface);
       transition: border-color 0.3s;
     }
 
     .skill-group:hover {
-      border-color: rgba(74,158,255,0.3);
+      border-color: rgba(26,86,219,0.35);
+      box-shadow: 0 4px 16px rgba(26,86,219,0.07);
     }
 
     .skill-group-title {
@@ -544,7 +544,7 @@
       content: '';
       flex: 1;
       height: 1px;
-      background: var(--border);
+      background: rgba(26,86,219,0.15);
     }
 
     .cert-list {
@@ -579,7 +579,7 @@
       gap: 1.5rem;
       align-items: flex-start;
       padding: 1.2rem 1.5rem;
-      border: 1px solid var(--border);
+      border: 1px solid rgba(26,86,219,0.15);
       background: var(--surface);
       transition: all 0.3s;
       opacity: 0;
@@ -592,7 +592,8 @@
     }
 
     .teach-item:hover {
-      border-color: rgba(74,158,255,0.3);
+      border-color: rgba(26,86,219,0.35);
+      box-shadow: 0 4px 16px rgba(26,86,219,0.07);
     }
 
     .teach-icon {
@@ -608,6 +609,8 @@
       line-height: 1.6;
     }
 
+    .teach-text strong { color: var(--text); font-weight: 500; }
+
     /* ─── EXPERIENCE ─── */
     #experience .exp-list {
       display: grid;
@@ -619,7 +622,7 @@
       grid-template-columns: 160px 1fr;
       gap: 2rem;
       padding-bottom: 1.5rem;
-      border-bottom: 1px solid var(--border);
+      border-bottom: 1px solid rgba(26,86,219,0.12);
     }
 
     .exp-item:last-child { border-bottom: none; }
@@ -636,6 +639,7 @@
     .exp-role {
       font-weight: 500;
       margin-bottom: 0.3rem;
+      color: var(--text);
     }
 
     .exp-org {
@@ -658,6 +662,7 @@
       font-family: var(--serif);
       font-size: clamp(2.5rem, 5vw, 4rem);
       margin-bottom: 1rem;
+      color: var(--text);
     }
 
     #contact .contact-sub {
@@ -679,7 +684,7 @@
       letter-spacing: 0.1em;
       text-decoration: none;
       color: var(--muted);
-      border: 1px solid var(--border);
+      border: 1px solid rgba(26,86,219,0.2);
       padding: 0.8rem 1.8rem;
       transition: all 0.2s;
       display: flex;
@@ -690,7 +695,7 @@
     .contact-link:hover {
       color: var(--accent);
       border-color: var(--accent);
-      background: rgba(74,158,255,0.05);
+      background: rgba(26,86,219,0.04);
     }
 
     /* ─── FOOTER ─── */
@@ -699,11 +704,12 @@
       z-index: 2;
       text-align: center;
       padding: 2rem;
-      border-top: 1px solid var(--border);
+      border-top: 1px solid rgba(26,86,219,0.12);
       font-family: var(--mono);
       font-size: 0.72rem;
       color: var(--muted);
       letter-spacing: 0.1em;
+      background: var(--bg2);
     }
 
     /* ─── ANIMATIONS ─── */
@@ -717,7 +723,7 @@
       position: relative;
       z-index: 2;
       height: 1px;
-      background: var(--border);
+      background: rgba(26,86,219,0.12);
       max-width: 1100px;
       margin: 0 auto;
     }
@@ -734,22 +740,10 @@
     }
 
     /* ─── LANG BARS ─── */
-    .lang-item {
-      margin-bottom: 1.2rem;
-    }
-    .lang-name {
-      display: flex;
-      justify-content: space-between;
-      font-size: 0.85rem;
-      margin-bottom: 0.4rem;
-    }
+    .lang-item { margin-bottom: 1.2rem; }
+    .lang-name { display: flex; justify-content: space-between; font-size: 0.85rem; margin-bottom: 0.4rem; color: var(--text); }
     .lang-level { color: var(--muted); font-size: 0.8rem; }
-    .lang-bar-bg {
-      height: 3px;
-      background: var(--surface2);
-      border-radius: 2px;
-      overflow: hidden;
-    }
+    .lang-bar-bg { height: 3px; background: #e2e8f0; border-radius: 2px; overflow: hidden; }
     .lang-bar-fill {
       height: 100%;
       background: linear-gradient(90deg, var(--accent), var(--accent2));
@@ -757,8 +751,6 @@
       width: 0;
       transition: width 1.2s cubic-bezier(0.4,0,0.2,1);
     }
-
-    /* Active state for bars triggered by intersection */
     .lang-bar-fill.animate { width: var(--w); }
   </style>
 </head>
@@ -785,7 +777,7 @@
     <div class="hero-tag">PhD Researcher · ENSIAS · Rabat, Morocco</div>
     <h1 class="hero-name">Adil<br><em>Attiaoui</em></h1>
     <p class="hero-subtitle">
-      Researching <strong>Vehicular Collective Perception Misbehavior Detection & Mitigation</strong>
+      Researching <strong>Vehicular Collective Perception Misbehavior Detection &amp; Mitigation</strong>
       at Mohammed V University. Exploring the intersection of cybersecurity, federated learning,
       and intelligent transportation systems.
     </p>
@@ -890,7 +882,7 @@
     <div class="timeline-item">
       <div class="timeline-dot"></div>
       <div class="tl-date">10/2023 — Present</div>
-      <div class="tl-degree">PhD in Vehicular Collective Perception Misbehavior Detection & Mitigation</div>
+      <div class="tl-degree">PhD in Vehicular Collective Perception Misbehavior Detection &amp; Mitigation</div>
       <div class="tl-school">National School of Computer Science and Systems Analysis (ENSIAS) · Rabat, Morocco</div>
     </div>
     <div class="timeline-item">
@@ -902,7 +894,7 @@
     <div class="timeline-item">
       <div class="timeline-dot"></div>
       <div class="tl-date">12/2020 — 08/2021</div>
-      <div class="tl-degree">Bachelor's in Software Engineering & Advanced Administration of Systems and Networks</div>
+      <div class="tl-degree">Bachelor's in Software Engineering &amp; Advanced Administration of Systems and Networks</div>
       <div class="tl-school">Higher School of Technology (EST Casablanca) · Casablanca, Morocco</div>
     </div>
     <div class="timeline-item">
@@ -975,7 +967,7 @@
 <section id="skills">
   <div class="section-header">
     <span class="section-num">04</span>
-    <h2 class="section-title">Certifications & Skills</h2>
+    <h2 class="section-title">Certifications &amp; Skills</h2>
     <div class="section-line"></div>
   </div>
   <div class="skills-grid">
@@ -983,8 +975,8 @@
     <div class="skill-group">
       <div class="skill-group-title">Networking</div>
       <ul class="cert-list">
-        <li>CCNA: Enterprise Networking, Security & Automation</li>
-        <li>CCNA: Switching, Routing & Wireless Essentials</li>
+        <li>CCNA: Enterprise Networking, Security &amp; Automation</li>
+        <li>CCNA: Switching, Routing &amp; Wireless Essentials</li>
         <li>Huawei Datacom</li>
       </ul>
     </div>
@@ -1002,18 +994,18 @@
       <ul class="cert-list">
         <li>PCEP – Certified Entry-Level Python Programmer</li>
         <li>Unix System Administration</li>
-        <li>IoT & WAN Technologies</li>
+        <li>IoT &amp; WAN Technologies</li>
       </ul>
     </div>
 
     <div class="skill-group">
       <div class="skill-group-title">Research Areas</div>
       <ul class="cert-list">
-        <li>Vehicular Networks & V2X Security</li>
+        <li>Vehicular Networks &amp; V2X Security</li>
         <li>Federated Learning Defense</li>
         <li>Blockchain Applications</li>
-        <li>Game Theory & Trust Mechanisms</li>
-        <li>Misbehavior Detection & Mitigation</li>
+        <li>Game Theory &amp; Trust Mechanisms</li>
+        <li>Misbehavior Detection &amp; Mitigation</li>
       </ul>
     </div>
 
@@ -1021,8 +1013,8 @@
       <div class="skill-group-title">Key Qualities</div>
       <ul class="cert-list">
         <li>Organizational Skills</li>
-        <li>Dynamic & Initiative-driven</li>
-        <li>Flexible & Collaborative</li>
+        <li>Dynamic &amp; Initiative-driven</li>
+        <li>Flexible &amp; Collaborative</li>
         <li>Chess strategist</li>
       </ul>
     </div>
@@ -1105,15 +1097,9 @@
     <h2 class="contact-title">Let's <em style="font-family:var(--serif); font-style:italic; color:var(--accent)">Connect</em></h2>
     <p class="contact-sub">Interested in collaboration, research discussions, or academic opportunities? Reach out.</p>
     <div class="contact-links">
-      <a class="contact-link" href="mailto:adil7attiaoui@gmail.com">
-        ✉ adil7attiaoui@gmail.com
-      </a>
-      <a class="contact-link" href="https://www.linkedin.com/in/" target="_blank">
-        in LinkedIn
-      </a>
-      <a class="contact-link" href="tel:+212636793114">
-        ☎ +212 636 793 114
-      </a>
+      <a class="contact-link" href="mailto:adil7attiaoui@gmail.com">✉ adil7attiaoui@gmail.com</a>
+      <a class="contact-link" href="https://www.linkedin.com/in/" target="_blank">in LinkedIn</a>
+      <a class="contact-link" href="tel:+212636793114">☎ +212 636 793 114</a>
     </div>
   </div>
 </section>
@@ -1123,12 +1109,10 @@
 </footer>
 
 <script>
-  // Intersection Observer for animations
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(el => {
       if (el.isIntersecting) {
         el.target.classList.add('visible');
-        // trigger language bars
         el.target.querySelectorAll('.lang-bar-fill').forEach(bar => bar.classList.add('animate'));
       }
     });
@@ -1136,7 +1120,6 @@
 
   document.querySelectorAll('.timeline-item, .pub-card, .teach-item').forEach(el => observer.observe(el));
 
-  // Observe about section for lang bars
   document.querySelectorAll('#about .info-item').forEach(el => {
     const io = new IntersectionObserver((entries) => {
       entries.forEach(e => {
@@ -1148,12 +1131,10 @@
     io.observe(el);
   });
 
-  // Stagger pub cards
   document.querySelectorAll('.pub-card').forEach((card, i) => {
     card.style.transitionDelay = `${i * 0.08}s`;
   });
 
-  // Stagger timeline
   document.querySelectorAll('.timeline-item').forEach((item, i) => {
     item.style.transitionDelay = `${i * 0.1}s`;
   });

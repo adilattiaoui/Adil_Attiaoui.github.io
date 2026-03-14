@@ -738,34 +738,39 @@
       .scroll-indicator { left: 1.5rem; }
     }
 
+    /* ─── HERO LAYOUT ─── */
+    #hero {
+      display: flex !important;
+      align-items: center !important;
+      gap: 4rem !important;
+    }
+
     /* ─── PROFILE PHOTO ─── */
     .hero-photo-wrap {
-      position: absolute;
-      top: 50%;
-      right: 6rem;
-      transform: translateY(-50%);
+      position: relative;
+      flex-shrink: 0;
       z-index: 2;
       opacity: 0;
-      animation: fade-up 0.8s 0.6s forwards;
+      animation: fade-up 0.8s 0.2s forwards;
     }
 
     .hero-photo-frame {
-      width: 220px;
-      height: 220px;
+      width: 240px;
+      height: 240px;
       border-radius: 50%;
       border: 3px solid var(--accent);
       padding: 4px;
       background: var(--bg);
-      box-shadow: 0 0 0 1px rgba(26,86,219,0.15), 0 12px 40px rgba(26,86,219,0.12);
+      box-shadow: 0 0 0 1px rgba(26,86,219,0.15), 0 16px 48px rgba(26,86,219,0.14);
       position: relative;
     }
 
     .hero-photo-frame::after {
       content: '';
       position: absolute;
-      inset: -8px;
+      inset: -10px;
       border-radius: 50%;
-      border: 1px dashed rgba(26,86,219,0.2);
+      border: 1px dashed rgba(26,86,219,0.25);
       animation: spin-ring 18s linear infinite;
     }
 
@@ -779,24 +784,8 @@
       height: 100%;
       border-radius: 50%;
       object-fit: cover;
+      object-position: center top;
       display: block;
-    }
-
-    /* Initials fallback shown when no image src */
-    .hero-photo-initials {
-      width: 100%;
-      height: 100%;
-      border-radius: 50%;
-      background: linear-gradient(135deg, var(--surface) 0%, var(--surface2) 100%);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-family: var(--serif);
-      font-size: 3rem;
-      font-style: italic;
-      color: var(--accent);
-      letter-spacing: -0.02em;
-      user-select: none;
     }
 
     .hero-photo-caption {
@@ -809,8 +798,13 @@
       text-transform: uppercase;
     }
 
-    @media (max-width: 1100px) {
-      .hero-photo-wrap { display: none; }
+    @media (max-width: 900px) {
+      #hero { flex-direction: column !important; align-items: flex-start !important; gap: 2.5rem !important; }
+      .hero-photo-frame { width: 160px; height: 160px; }
+    }
+
+    @media (max-width: 600px) {
+      .hero-photo-frame { width: 120px; height: 120px; }
     }
 
     /* ─── LANG BARS ─── */
@@ -847,12 +841,12 @@
 <section id="hero" style="max-width:100%; padding-left:6rem; padding-right:6rem;">
   <div class="hero-glow"></div>
   <div class="hero-glow2"></div>
-  <!-- PROFILE PHOTO — replace "your-photo.jpg" with your actual image filename -->
+
+  <!-- PROFILE PHOTO — left side -->
   <div class="hero-photo-wrap">
     <div class="hero-photo-frame">
-      <img src="https://media.licdn.com/dms/image/v2/D4E03AQEzNfe2hYVvlg/profile-displayphoto-crop_800_800/B4EZka2PjZGcAM-/0/1757092051673?e=1775088000&v=beta&t=iKdPaT66bg91n_UGViRjBAf9gmYaBtEd57PTwTPzlbw" alt="Adil Attiaoui"
-           onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
-      <div class="hero-photo-initials" style="display:none">A.A</div>
+      <img src="https://media.licdn.com/dms/image/v2/D4E03AQEzNfe2hYVvlg/profile-displayphoto-crop_800_800/B4EZka2PjZGcAM-/0/1757092051673?e=1775088000&v=beta&t=iKdPaT66bg91n_UGViRjBAf9gmYaBtEd57PTwTPzlbw"
+           alt="Adil Attiaoui" />
     </div>
     <div class="hero-photo-caption">Adil Attiaoui · PhD</div>
   </div>

@@ -556,7 +556,7 @@
       <div class="pub-venue">Internet of Things · Volume 34, November 2025 <span class="pub-class">Quartile Q1 </span></div>
       <div class="pub-title">Trust-aware and game-theoretic cooperative detection of misbehavior in connected vehicles</div>
       <div class="pub-authors"><strong>A. Attiaoui</strong>, M. Elmachkour, A. Kobbane, M. Ayaida, H. Tembine</div>
-      <div class="pub-doi"><a href="https://doi.org/10.1016/j.iot.2025.101799" class="btn-primary"> doi: 10.1016/j.iot.2025.101799</a></div>
+      <div class="pub-doi"><a href="https://doi.org/10.1016/j.iot.2025.101799> doi: 10.1016/j.iot.2025.101799</a></div>
     </div>
     
     <div class="pub-card">

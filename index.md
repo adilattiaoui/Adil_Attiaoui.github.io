@@ -757,7 +757,7 @@
         <div class="fyp-num">FYP 01 · 2023–2024</div>
         <div class="fyp-title">Development of a Secure Application for the Management and Storage of Sensitive Documents</div>
         <div class="fyp-student">Supervised student: <strong>2nd year engineering — ENSIAS</strong></div>
-        <div class="fyp-student" style="margin-top:0.3rem; font-size:0.82rem; color:var(--muted);">The project focused on developing a lightweight anomaly-based IDS tailored for resource-constrained IoT devices, using classification algorithms (Random Forest, SVM) trained on network traffic datasets. The student implemented the system in Python and evaluated it against known IoT attack scenarios (DoS, replay, man-in-the-middle).</div>
+        <div class="fyp-student" style="margin-top:0.3rem; font-size:0.82rem; color:var(--muted);">Designed and implemented a secure web-based application for managing and storing sensitive documents. The system ensures data confidentiality, integrity, and controlled access through authentication and encryption mechanisms. Key features include role-based access control, secure file upload/download, and audit logging to track user activities. The project focused on enhancing data protection and reliability in document management systems.</div>
         <div class="fyp-tags">
           <span class="fyp-tag">Machine Learning</span>
           <span class="fyp-tag">IoT Security</span>
@@ -771,7 +771,7 @@
         <div class="fyp-num">FYP 02 · 2023–2024</div>
         <div class="fyp-title">Diploma Management Application Using Blockchain Technology and NFTs</div>
         <div class="fyp-student">Supervised student: <strong>2nd year engineering — ENSIAS</strong></div>
-        <div class="fyp-student" style="margin-top:0.3rem; font-size:0.82rem; color:var(--muted);">The project explored the use of blockchain technology to ensure integrity and traceability of data exchanged between vehicles and infrastructure in a V2X scenario. The student designed a smart-contract-based access control mechanism using Ethereum/Solidity, tested on a local blockchain testnet with simulated vehicle nodes.</div>
+        <div class="fyp-student" style="margin-top:0.3rem; font-size:0.82rem; color:var(--muted);">Developed a decentralized application for the secure management and verification of academic diplomas using blockchain technology. The system leverages smart contracts to ensure authenticity and immutability of records, while NFTs are used to represent unique digital diplomas. The solution enables transparent verification, prevents fraud, and enhances trust between institutions and stakeholders.</div>
         <div class="fyp-tags">
           <span class="fyp-tag">Blockchain</span>
           <span class="fyp-tag">V2X</span>

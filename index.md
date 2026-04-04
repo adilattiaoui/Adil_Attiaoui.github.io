@@ -606,8 +606,7 @@
               <div class="soft-desc">Operates fluidly across Moroccan and French academic environments, adapting communication style and expectations to each institutional culture while maintaining a unified research identity.</div>
             </div>
           </div>
-        </div>
-      </div>
+   
 
           
           <div class="soft-item">

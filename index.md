@@ -584,6 +584,32 @@
       <div class="soft-card">
         <div class="soft-card-title">Interpersonal &amp; Relational</div>
         <div class="soft-items">
+
+<div class="soft-item">
+            <div class="soft-icon">🌐</div>
+            <div>
+              <div class="soft-label">Leadership &amp; Social Influence</div>
+              <div class="soft-desc">Leads teaching sessions, co-supervises Final Year Projects, and coordinates with academic advisors across two countries — taking ownership of both research milestones and the academic development of junior students.</div>
+            </div>
+          </div>
+          <div class="soft-item">
+            <div class="soft-icon">🤝</div>
+            <div>
+              <div class="soft-label">Collaborative Reasoning &amp; Team Mediation</div>
+              <div class="soft-desc">Navigates the complexity of a co-tutelle PhD by facilitating alignment between two research teams (ENSIAS and INSA–UPHF) with different methodological cultures — bridging perspectives through clear scientific communication and shared problem framing.</div>
+            </div>
+          </div>
+          <div class="soft-item">
+            <div class="soft-icon">🌍</div>
+            <div>
+              <div class="soft-label">Intercultural Openness</div>
+              <div class="soft-desc">Operates fluidly across Moroccan and French academic environments, adapting communication style and expectations to each institutional culture while maintaining a unified research identity.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+          
           <div class="soft-item">
             <div class="soft-icon">🤝</div>
             <div>
@@ -610,6 +636,22 @@
       <div class="soft-card">
         <div class="soft-card-title">Professional &amp; Intellectual</div>
         <div class="soft-items">
+
+         <div class="soft-item">
+            <div class="soft-icon">🔍</div>
+            <div>
+              <div class="soft-label">Analytical Thinking &amp; Innovation</div>
+              <div class="soft-desc">Designs novel misbehavior detection frameworks by combining Bayesian inference, game theory, and reputation systems — translating abstract mathematical models into working algorithms for vehicular networks.</div>
+            </div>
+          </div>
+          <div class="soft-item">
+            <div class="soft-icon">🧩</div>
+            <div>
+              <div class="soft-label">Complex Problem-Solving</div>
+              <div class="soft-desc">Addresses multi-layered security challenges in V2X environments where attacker behavior, network dynamics, and real-time constraints must be jointly considered — producing solutions validated through simulation and peer-reviewed publications.</div>
+            </div>
+          </div>
+          
           <div class="soft-item">
             <div class="soft-icon">🎯</div>
             <div>
@@ -646,8 +688,8 @@
           <div class="soft-item">
             <div class="soft-icon">♟️</div>
             <div>
-              <div class="soft-label">Strategic Thinking</div>
-              <div class="soft-desc">Chess practitioner — cultivates a disciplined, anticipatory mindset transferable to research planning and problem-solving.</div>
+              <div class="soft-label">Strategic Planning</div>
+              <div class="soft-desc">Chess practitioner since early career — develops a disciplined, long-horizon thinking style applied to research roadmapping, publication strategy, and anticipating technical roadblocks before they arise.</div>
             </div>
           </div>
           <div class="soft-item">
@@ -662,6 +704,20 @@
       <div class="soft-card">
         <div class="soft-card-title">Academic Integrity &amp; Ethics</div>
         <div class="soft-items">
+         <div class="soft-item">
+            <div class="soft-icon">🧭</div>
+            <div>
+              <div class="soft-label">Critical Thinking for Intellectual Honesty</div>
+              <div class="soft-desc">Applies rigorous critical analysis to avoid confirmation bias — systematically cross-validating results across different simulation scenarios and challenging own assumptions before submission, ensuring objective and reproducible scientific contributions.</div>
+            </div>
+          </div>
+          <div class="soft-item">
+            <div class="soft-icon">🛡️</div>
+            <div>
+              <div class="soft-label">Responsible Use of Technology &amp; AI</div>
+              <div class="soft-desc">Conscious of the ethical dimensions of security research — particularly regarding the dual-use nature of misbehavior detection systems, privacy implications in vehicular data sharing, and the responsible deployment of AI-driven decision models in safety-critical transport environments.</div>
+            </div>
+          </div>
           <div class="soft-item">
             <div class="soft-icon">🧭</div>
             <div>

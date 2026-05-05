@@ -860,7 +860,6 @@
     </div>
   </div>
 </section>
-
 <div class="divider"></div>
 
 
@@ -877,11 +876,10 @@
       <p>I combine formal approaches from <strong>game theory</strong>, <strong>Bayesian inference</strong>, and <strong>reputation systems</strong> to model adversarial behavior and engineer trust-based defenses for connected vehicle environments.</p>
       <p>Beyond research, I am an active <strong>teaching assistant</strong> mentoring engineering students in networking, Unix systems, and IoT — and an avid chess player.</p>
     </div>
-  
+  </div>
      </div>
   </div>
 </section>
-
 <div class="divider"></div>
 
 

@@ -869,7 +869,6 @@
     <span class="section-num">07</span>
     <h2 class="section-title">Career Project </h2>
     <div class="section-line"></div>
-   <div class="about-grid">
     <div class="about-text">
       <p>My career objective is to position myself at the intersection of cybersecurity, intelligent transportation systems, and distributed artificial intelligence, with a particular focus on secure and trustworthy cooperative systems.
 
@@ -880,7 +879,6 @@ In the short term, I seek to deepen my expertise in advanced cybersecurity model
 In the long term, my goal is to contribute to the development of next-generation intelligent and secure infrastructures, whether in academia or industry, by bridging theoretical models (game theory, Bayesian inference) with practical deployments in autonomous systems and connected environments.
 
 I am particularly interested in roles that combine research, system design, and real-world implementation, allowing me to translate scientific insights into robust and deployable solutions.</p>
-    </div>
   </div>
   </div>
 </section>

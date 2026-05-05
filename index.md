@@ -867,7 +867,7 @@
 <!-- projetpro -->
 <section id="projetpro">
   <div class="section-header">
-    <span class="section-num">06</span>
+    <span class="section-num">07</span>
     <h2 class="section-title">Career Project </h2>
     <div class="section-line"></div>
   </div>

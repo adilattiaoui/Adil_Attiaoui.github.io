@@ -878,7 +878,7 @@
       <p>Beyond research, I am an active <strong>teaching assistant</strong> mentoring engineering students in networking, Unix systems, and IoT — and an avid chess player.</p>
     </div>
   
-     
+     </div>
   </div>
 </section>
 

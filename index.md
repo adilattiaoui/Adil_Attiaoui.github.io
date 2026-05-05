@@ -870,15 +870,15 @@
     <h2 class="section-title">Career Project </h2>
     <div class="section-line"></div>
     <div class="about-text">
-      <p>My career objective is to position myself at the intersection of cybersecurity, intelligent transportation systems, and distributed artificial intelligence, with a particular focus on secure and trustworthy cooperative systems.
+      <p>My career objective is to position myself at the intersection of cybersecurity, intelligent transportation systems, and distributed artificial intelligence, with a particular focus on secure and trustworthy cooperative systems.</p>
 
-Through my PhD research on misbehavior detection in vehicular collective perception, I aim to develop a strong expertise in designing resilient, scalable, and explainable security mechanisms for large-scale, decentralized environments such as V2X networks and federated learning systems.
+<p>Through my PhD research on misbehavior detection in vehicular collective perception, I aim to develop a strong expertise in designing resilient, scalable, and explainable security mechanisms for large-scale, decentralized environments such as V2X networks and federated learning systems.</p>
 
-In the short term, I seek to deepen my expertise in advanced cybersecurity models, distributed learning architectures, and real-world system validation, while contributing to high-impact research and collaborative projects in both academic and industrial contexts.
+<p>In the short term, I seek to deepen my expertise in advanced cybersecurity models, distributed learning architectures, and real-world system validation, while contributing to high-impact research and collaborative projects in both academic and industrial contexts.</p>
 
-In the long term, my goal is to contribute to the development of next-generation intelligent and secure infrastructures, whether in academia or industry, by bridging theoretical models (game theory, Bayesian inference) with practical deployments in autonomous systems and connected environments.
+<p>In the long term, my goal is to contribute to the development of next-generation intelligent and secure infrastructures, whether in academia or industry, by bridging theoretical models (game theory, Bayesian inference) with practical deployments in autonomous systems and connected environments.</p>
 
-I am particularly interested in roles that combine research, system design, and real-world implementation, allowing me to translate scientific insights into robust and deployable solutions.</p>
+<p>I am particularly interested in roles that combine research, system design, and real-world implementation, allowing me to translate scientific insights into robust and deployable solutions.</p>
   </div>
   </div>
 </section>

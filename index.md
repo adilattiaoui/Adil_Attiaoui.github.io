@@ -869,6 +869,7 @@
     <span class="section-num">07</span>
     <h2 class="section-title">Career Project </h2>
     <div class="section-line"></div>
+    </div>
     <div class="about-text">
       <p>My career objective is to position myself at the intersection of cybersecurity, intelligent transportation systems, and distributed artificial intelligence, with a particular focus on secure and trustworthy cooperative systems.</p>
 

@@ -870,32 +870,15 @@
     <span class="section-num">07</span>
     <h2 class="section-title">Career Project </h2>
     <div class="section-line"></div>
-  </div>
-  <div class="exp-list">
-    <div class="exp-item">
-      <div class="exp-date">03/2023 – 10/2023<br>ENSIAS, Rabat</div>
-      <div>
-        <div class="exp-role">Research Internship</div>
-        <div class="exp-org">Laboratory of ENSIAS — National School of Computer Science and Systems Analysis</div>
-         <div class="fyp-student" style="margin-top:0.3rem; font-size:0.82rem; color:var(--muted);">Conducted research on a blockchain-enabled defense mechanism for securing federated learning systems against malicious node updates. The work focused on enhancing trust, integrity, and robustness in decentralized learning environments by detecting and mitigating adversarial contributions. Implemented and evaluated security strategies combining federated learning with blockchain technologies to ensure reliable model aggregation.</div>
-      </div>
+   <div class="about-grid">
+    <div class="about-text">
+      <p>I am a <strong>PhD student</strong> in a co-tutelle program between the National School of Computer Science and Systems Analysis (<strong>ENSIAS</strong>), Mohammed V University in Rabat, Morocco, and the <strong>Institut National des Sciences Appliquées de Hauts-de-France (INSA–UPHF)</strong> in France — specializing in vehicular network security and misbehavior detection.</p>
+      <p>My research focuses on designing robust detection and mitigation mechanisms for <strong>misbehaving nodes in vehicular collective perception systems</strong> — a critical challenge as autonomous vehicles become increasingly reliant on cooperative sensor data.</p>
+      <p>I combine formal approaches from <strong>game theory</strong>, <strong>Bayesian inference</strong>, and <strong>reputation systems</strong> to model adversarial behavior and engineer trust-based defenses for connected vehicle environments.</p>
+      <p>Beyond research, I am an active <strong>teaching assistant</strong> mentoring engineering students in networking, Unix systems, and IoT — and an avid chess player.</p>
     </div>
-    <div class="exp-item">
-      <div class="exp-date">05/2021 – 07/2021<br>El Jadida, Morocco</div>
-      <div>
-        <div class="exp-role">IoT Systems Developer Intern</div>
-        <div class="exp-org">E-Viande Company, Zaouiat SIDI ISMAIL</div>
-         <div class="exp-org" style="margin-top:0.3rem; font-size:0.82rem; color:var(--muted);">Developed an IoT-based system for monitoring the availability of electrical energy. The solution involved real-time data acquisition from sensors, system integration, and visualization of energy status to improve operational efficiency and reliability. The project demonstrated practical applications of IoT in industrial environments.</div>
-      </div>
-    </div>
-    <div class="exp-item">
-      <div class="exp-date">10/2019 – Present<br>Essaouira, Morocco</div>
-      <div>
-        <div class="exp-role">Head of the Project Monitoring and Evaluation Committee</div>
-        <div class="exp-org">Forsa Personal Development Association</div>
-         <div class="fyp-student" style="margin-top:0.3rem; font-size:0.82rem; color:var(--muted);">Active member of the Projects Monitoring and Evaluation Committee, contributing to the planning, follow-up, and assessment of community and development projects. Participated in organizing activities, supporting team coordination, and improving project impact through structured evaluation processes.</div>
-      </div>
-    </div>
+  
+     
   </div>
 </section>
 
